@@ -1,0 +1,14 @@
+{
+  "jsxRuntime": "automatic",
+  "typescript": true,
+  "svgoConfig": {
+    "plugins": [
+      "removeDimensions"
+    ]
+  },
+  "svgProps": {
+    "width": "{size}",
+    "height": "{size}",
+    "fill": "{color}"
+  }
+}
