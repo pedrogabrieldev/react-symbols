@@ -1,6 +1,6 @@
 {
   "name": "@pedrogabrieldev/react-symbols",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Material Symbols as React components",
   "type": "module",
   "main": "dist/index.cjs",
