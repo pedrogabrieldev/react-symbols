@@ -11,11 +11,10 @@
     "dist"
   ],
   "scripts": {
-    "cleanup": "rimraf dist",
-    "create-renamed-svgs": "node ./src/createRenamedSvgs.js",
-    "convert-svg": "npx @svgr/cli --config-file .svgrrc --template src/template.cjs --no-index --out-dir src/components -- src/assets_renamed",
+    "cleanup": "rimraf dist src/components src/exported",
+    "convert-svg": "npx @svgr/cli --config-file .svgrrc --template src/template.cjs --no-index --out-dir src/components -- src/assets",
     "create-exported-icons": "node ./src/createExportedIcons.js",
-    "create-components-from-svg": "npm run create-renamed-svgs && npm run convert-svg && npm run create-exported-icons",
+    "create-components-from-svg": "npm run convert-svg && npm run create-exported-icons",
     "declaration": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
     "prebuild": "npm run cleanup && npm run create-components-from-svg && npm run declaration",
     "build": "rollup -c",

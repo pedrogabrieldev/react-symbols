@@ -1,51 +1,51 @@
 
-  import SearchFilled100 from '../components/SearchFilled100'
-  import SearchFilled200 from '../components/SearchFilled200'
-  import SearchFilled300 from '../components/SearchFilled300'
-  import SearchFilled400 from '../components/SearchFilled400'
-  import SearchFilled500 from '../components/SearchFilled500'
-  import SearchFilled600 from '../components/SearchFilled600'
-  import SearchFilled700 from '../components/SearchFilled700'
-  import SearchOutlined100 from '../components/SearchOutlined100'
-  import SearchOutlined200 from '../components/SearchOutlined200'
-  import SearchOutlined300 from '../components/SearchOutlined300'
-  import SearchOutlined400 from '../components/SearchOutlined400'
-  import SearchOutlined500 from '../components/SearchOutlined500'
-  import SearchOutlined600 from '../components/SearchOutlined600'
-  import SearchOutlined700 from '../components/SearchOutlined700'
+  import SearchFill1Wght100Grad0Opsz48 from '../components/SearchFill1Wght100Grad0Opsz48'
+  import SearchFill1Wght200Grad0Opsz48 from '../components/SearchFill1Wght200Grad0Opsz48'
+  import SearchFill1Wght300Grad0Opsz48 from '../components/SearchFill1Wght300Grad0Opsz48'
+  import SearchFill1Wght400Grad0Opsz48 from '../components/SearchFill1Wght400Grad0Opsz48'
+  import SearchFill1Wght500Grad0Opsz48 from '../components/SearchFill1Wght500Grad0Opsz48'
+  import SearchFill1Wght600Grad0Opsz48 from '../components/SearchFill1Wght600Grad0Opsz48'
+  import SearchFill1Wght700Grad0Opsz48 from '../components/SearchFill1Wght700Grad0Opsz48'
+  import SearchFill0Wght100Grad0Opsz48 from '../components/SearchFill0Wght100Grad0Opsz48'
+  import SearchFill0Wght200Grad0Opsz48 from '../components/SearchFill0Wght200Grad0Opsz48'
+  import SearchFill0Wght300Grad0Opsz48 from '../components/SearchFill0Wght300Grad0Opsz48'
+  import SearchFill0Wght400Grad0Opsz48 from '../components/SearchFill0Wght400Grad0Opsz48'
+  import SearchFill0Wght500Grad0Opsz48 from '../components/SearchFill0Wght500Grad0Opsz48'
+  import SearchFill0Wght600Grad0Opsz48 from '../components/SearchFill0Wght600Grad0Opsz48'
+  import SearchFill0Wght700Grad0Opsz48 from '../components/SearchFill0Wght700Grad0Opsz48'
 
   import { IconTemplateProps } from '../IconTemplate.types'
 
   export const Search = ({ variant, size = 48, weight = '400', color }: IconTemplateProps) => {
     switch (true) {
       case variant === 'filled' && weight === '100':
-        return <SearchFilled100 size={size} color={color} />
+        return <SearchFill1Wght100Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '200':
-        return <SearchFilled200 size={size} color={color} />
+        return <SearchFill1Wght200Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '300':
-        return <SearchFilled300 size={size} color={color} />
+        return <SearchFill1Wght300Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '400':
-        return <SearchFilled400 size={size} color={color} />
+        return <SearchFill1Wght400Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '500':
-        return <SearchFilled500 size={size} color={color} />
+        return <SearchFill1Wght500Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '600':
-        return <SearchFilled600 size={size} color={color} />
+        return <SearchFill1Wght600Grad0Opsz48 size={size} color={color} />
       case variant === 'filled' && weight === '700':
-        return <SearchFilled700 size={size} color={color} />
+        return <SearchFill1Wght700Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '100':
-        return <SearchOutlined100 size={size} color={color} />
+        return <SearchFill0Wght100Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '200':
-        return <SearchOutlined200 size={size} color={color} />
+        return <SearchFill0Wght200Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '300':
-        return <SearchOutlined300 size={size} color={color} />
+        return <SearchFill0Wght300Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '400':
-        return <SearchOutlined400 size={size} color={color} />
+        return <SearchFill0Wght400Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '500':
-        return <SearchOutlined500 size={size} color={color} />
+        return <SearchFill0Wght500Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '600':
-        return <SearchOutlined600 size={size} color={color} />
+        return <SearchFill0Wght600Grad0Opsz48 size={size} color={color} />
       case variant === 'outlined' && weight === '700':
-        return <SearchOutlined700 size={size} color={color} />
+        return <SearchFill0Wght700Grad0Opsz48 size={size} color={color} />
       default:
         return null
     }
