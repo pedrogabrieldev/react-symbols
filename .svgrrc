@@ -6,6 +6,7 @@
       "removeDimensions"
     ]
   },
+  "expandProps": false,
   "svgProps": {
     "width": "{size}",
     "height": "{size}",

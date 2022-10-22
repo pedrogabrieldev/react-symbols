@@ -4,7 +4,7 @@ import { IconProps } from '../Icon.types'
 
 ${variables.interfaces};
 
-const ${variables.componentName} = ({size, color, ...props}: IconProps) => (
+const ${variables.componentName} = ({ size, color }: IconProps) => (
   ${variables.jsx}
 );
  

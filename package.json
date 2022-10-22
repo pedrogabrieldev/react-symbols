@@ -6,18 +6,22 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "files": [
     "dist"
   ],
   "scripts": {
     "cleanup": "rimraf dist",
-    "convert-svg": "npx @svgr/cli --config-file .svgrrc --template src/template.cjs --out-dir src/components -- src/assets",
+    "create-renamed-svgs": "node ./src/createRenamedSvgs.js",
+    "convert-svg": "npx @svgr/cli --config-file .svgrrc --template src/template.cjs --no-index --out-dir src/components -- src/assets_renamed",
+    "create-exported-icons": "node ./src/createExportedIcons.js",
+    "create-components-from-svg": "npm run create-renamed-svgs && npm run convert-svg && npm run create-exported-icons",
     "declaration": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
-    "prebuild": "npm run cleanup && npm run convert-svg && npm run declaration",
+    "prebuild": "npm run cleanup && npm run create-components-from-svg && npm run declaration",
     "build": "rollup -c",
-    "publish:major": "npm version major && npm run build && npm publish --access public",
-    "publish:minor": "npm version minor && npm run build && npm publish --access public",
-    "publish:patch": "npm version patch && npm run build && npm publish --access public"
+    "publish:major": "npm version major && npm publish --access public",
+    "publish:minor": "npm version minor && npm publish --access public",
+    "publish:patch": "npm version patch && npm publish --access public"
   },
   "author": "Pedro Gabriel",
   "license": "MIT",
@@ -25,6 +29,7 @@
     "@rollup/plugin-typescript": "^9.0.1",
     "@svgr/cli": "^6.5.0",
     "@types/react": "^18.0.21",
+    "chokidar": "^3.5.3",
     "react": "^18.2.0",
     "rimraf": "^3.0.2",
     "rollup": "^3.2.3",
