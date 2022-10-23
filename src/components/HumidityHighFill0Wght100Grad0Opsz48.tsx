@@ -1,0 +1,14 @@
+import { IconProps } from "../Icon.types";
+const SvgHumidityHighFill0Wght100Grad0Opsz48 = ({ size, color }: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    role="img"
+    width={size}
+    height={size}
+    fill={color}
+  >
+    <path d="M24 39.4q-5.55 0-9.475-3.8T10.6 26.25q0-2.85 1.075-5.15 1.075-2.3 2.825-4.2L24 7.6l9.5 9.3q1.75 1.9 2.825 4.275Q37.4 23.55 37.4 26.25q0 5.5-3.9 9.325Q29.6 39.4 24 39.4Z" />
+  </svg>
+);
+export default SvgHumidityHighFill0Wght100Grad0Opsz48;
