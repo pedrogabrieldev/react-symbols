@@ -1,0 +1,17 @@
+import { IconProps } from "../Icon.types";
+const SvgToolsFlatHeadFill0Wght300Grad0Opsz48 = ({
+  size,
+  color,
+}: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    role="img"
+    width={size}
+    height={size}
+    fill={color}
+  >
+    <path d="M16.85 41v-2.25h14.3V41Zm0-5L15 23.05 18.8 8h10.4L33 23.05 31.15 36Zm2-2.25h10.3l1.4-9.6H17.4Zm-1.2-11.9h12.7l-2.85-11.6h-7Zm11.5 11.9h-10.3 10.3Z" />
+  </svg>
+);
+export default SvgToolsFlatHeadFill0Wght300Grad0Opsz48;

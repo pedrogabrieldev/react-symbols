@@ -1,0 +1,14 @@
+import { IconProps } from "../Icon.types";
+const SvgSwitchRightFill1Wght500Grad0Opsz48 = ({ size, color }: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 48 48"
+    role="img"
+    width={size}
+    height={size}
+    fill={color}
+  >
+    <path d="M20.05 38.85 5.2 24 20.05 9.15Zm7.9 0V9.15L42.8 24Zm3.3-7.95L38.1 24l-6.85-6.9Z" />
+  </svg>
+);
+export default SvgSwitchRightFill1Wght500Grad0Opsz48;
