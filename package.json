@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "cleanup": "rimraf dist src/components src/exported",
+    "download-icons": "node ./src/downloadIcons.js",
     "convert-svg": "npx @svgr/cli --config-file .svgrrc --template src/template.cjs --no-index --out-dir src/components -- src/assets",
     "create-exported-icons": "node ./src/createExportedIcons.js",
     "create-components-from-svg": "npm run convert-svg && npm run create-exported-icons",
